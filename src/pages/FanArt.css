@@ -1,0 +1,55 @@
+.fanart {
+    padding: 30px;
+}
+
+.page-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.fanart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.fanart-card {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fanart-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.fanart-card:hover img {
+    transform: scale(1.05);
+}
+
+.fanart-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.7),
+            transparent);
+    display: flex;
+    align-items: flex-end;
+    padding: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fanart-card:hover .fanart-overlay {
+    opacity: 1;
+}
+
+.fanart-overlay span {
+    font-size: 0.9rem;
+    color: #fff;
+}

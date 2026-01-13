@@ -1,0 +1,59 @@
+.movie-card {
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.25s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-6px);
+}
+
+/* FIX STARTS HERE */
+.poster-wrapper {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    /* standard movie poster ratio */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* KEY LINE */
+    display: block;
+}
+
+/* FIX ENDS HERE */
+
+.movie-info {
+    font-size: 0.8rem;
+    /* HARD RESET */
+    text-align: center;
+}
+
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 6px 0 2px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.movie-year {
+    font-size: 0.85em;
+    color: #9a9a9a;
+}
+
+.movie-poster {
+    font-size: 0;
+    /* hides alt text if image fails */
+}

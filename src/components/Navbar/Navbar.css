@@ -1,0 +1,121 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 14px 30px;
+    background: linear-gradient(90deg, #0d0d0d, #151515);
+    border-bottom: 1px solid #222;
+}
+
+/* Left & Right sections */
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+/* Navigation links */
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+    font-weight: 500;
+}
+
+/* Center section → used only to position search */
+.navbar-center {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+/* Search bar */
+.search-input {
+    width: 260px;
+    padding: 8px 12px;
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    color: #ffffff;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+/* Register button */
+.register-btn {
+    padding: 6px 14px;
+    border: 1px solid white;
+    color: #ffffff;
+}
+
+/* Avatar */
+.avatar-wrapper {
+    position: relative;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #6c5ce7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Dropdown */
+.avatar-dropdown {
+    position: absolute;
+    right: 0;
+    top: 42px;
+    background-color: #151515;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 6px;
+    min-width: 120px;
+    display: none;
+    z-index: 100;
+}
+
+.avatar-dropdown button {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 8px;
+    text-align: left;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.avatar-dropdown button:hover {
+    background-color: #1f1f1f;
+}
+
+/* Show dropdown on hover */
+.avatar-wrapper:hover .avatar-dropdown,
+.avatar-dropdown:hover {
+    display: block;
+}

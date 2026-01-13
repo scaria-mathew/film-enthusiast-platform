@@ -1,0 +1,52 @@
+.new-releases {
+    padding: 30px;
+}
+
+.section-title {
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    min-width: 320px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    flex-shrink: 0;
+}
+
+.slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    border-radius: 14px;
+}
+
+.slide h3 {
+    font-size: 1.1rem;
+}
+
+.slide span {
+    font-size: 0.85rem;
+    color: #ccc;
+}

@@ -1,0 +1,246 @@
+.movie-details {
+    color: white;
+}
+
+/* Hero section */
+.movie-hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    height: 100%;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.2));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+}
+
+.movie-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.movie-meta {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Content section */
+.movie-content {
+    padding: 30px 40px;
+}
+
+.ott-list {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+}
+
+.ott-badge {
+    background-color: #1f1f1f;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid #333;
+}
+
+/* Reviews */
+.reviews-section {
+    padding: 30px 40px;
+}
+
+.reviews-section h2 {
+    margin-bottom: 16px;
+}
+
+.review-card {
+    background-color: #151515;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.review-user {
+    font-size: 0.85rem;
+    color: #bbb;
+}
+
+.review-tag {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.non-spoiler {
+    background-color: #2ecc71;
+    color: #000;
+}
+
+.spoiler-tag {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.review-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Spoiler blur */
+.review-card.spoiler .review-text {
+    filter: blur(6px);
+    cursor: pointer;
+}
+
+.review-card.spoiler:hover .review-text {
+    filter: blur(0);
+}
+
+/* Login hint */
+.login-hint {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* Review stars */
+.review-stars {
+    font-size: 0.85rem;
+    color: #f1c40f;
+    margin-top: 4px;
+}
+
+/* Review actions */
+.review-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.review-actions button {
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.review-actions button:hover {
+    color: #fff;
+}
+
+/* Login warning */
+.login-warning {
+    margin-top: 16px;
+    font-size: 0.85rem;
+    color: #e74c3c;
+}
+
+/* Discussions */
+.discussion-section {
+    padding: 30px 40px;
+}
+
+.discussion-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.discussion-tabs button {
+    padding: 8px 14px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #aaa;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.discussion-tabs button.active {
+    background-color: #6c5ce7;
+    color: #fff;
+    border-color: #6c5ce7;
+}
+
+.discussion-tabs .spoiler {
+    border-color: #e74c3c;
+}
+
+.discussion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.discussion-card {
+    background-color: #151515;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.spoiler-card {
+    border-color: #e74c3c;
+}
+
+.discussion-user {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 6px;
+}
+
+.discussion-card button {
+    margin-top: 8px;
+    background: none;
+    border: none;
+    color: #6c5ce7;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.discussion-link-btn {
+    margin-top: 20px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.discussion-link-btn:hover {
+    background-color: #6c5ce7;
+    border-color: #6c5ce7;
+}
+
+.ott-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    background-color: #1f1f1f;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ott-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}

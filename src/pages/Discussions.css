@@ -1,0 +1,47 @@
+.discussions {
+    padding: 30px;
+}
+
+.page-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.discussion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.discussion-card {
+    display: flex;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #151515;
+    border: 1px solid #222;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.discussion-card:hover {
+    transform: translateY(-2px);
+    background-color: #1c1c1c;
+}
+
+.discussion-poster {
+    width: 60px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.discussion-info h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.discussion-info p {
+    font-size: 0.8rem;
+    color: #aaa;
+}
