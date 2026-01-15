@@ -5,7 +5,7 @@
 }
 
 .movie-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-1.5px);
 }
 
 /* FIX STARTS HERE */
@@ -13,7 +13,7 @@
     width: 100%;
     aspect-ratio: 2 / 3;
     /* standard movie poster ratio */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     overflow: hidden;
     background-color: #111;
 }
